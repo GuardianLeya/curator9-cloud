@@ -13,7 +13,7 @@ def main(message):
     bot.send_message(message.chat.id, '*я люблю тебя*', parse_mode='Markdown')
 
 
-@bot.message.handler(command=[link])
+@bot.message.handler(command=['link'])
 def main(message):
     bot.send_message(message.chat.id,
                      'Жмак на [ссылку](https://w.forfun.com/fetch/c4/c493aac67877288476b0fc52d55f55cf.jpeg);)',
